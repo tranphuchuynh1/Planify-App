@@ -1,14 +1,26 @@
-
-import 'dart:async';
-
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:hoctapflutter/home_page.dart';
-import 'package:hoctapflutter/router.dart';
+import 'package:hoctapflutter/ui/home/main_page.dart';
+import 'package:hoctapflutter/ui/login/login_page.dart';
+import 'package:hoctapflutter/ui/onboarding/onboarding_page_view.dart';
+import 'package:hoctapflutter/ui/splash/splash.dart';
+import 'package:hoctapflutter/ui/welcome/welcome_page.dart';
 
+void main() async {
 
-void main() {
-  runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  
+  await EasyLocalization.ensureInitialized();
+
+  runApp(EasyLocalization(
+      supportedLocales: const [
+        Locale("vi"),
+        Locale("en")
+      ],
+      path: "assets/translations",
+      child: const MyApp(),
+    )
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -16,10 +28,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
+    return MaterialApp(
+      title: 'Planify',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      localizationsDelegates: context.localizationDelegates,
+      locale: context.locale,
+      supportedLocales: context.supportedLocales,
+      home: const MainPage(),
       debugShowCheckedModeBanner: false,
-      routerConfig: router,
     );
   }
 }
-
