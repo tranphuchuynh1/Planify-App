@@ -42,7 +42,7 @@ The app helps users organize their daily tasks, stay focused, and track producti
 
 | Home Screen | Focus Mode | 
 | Task Index | Profile |
-|-------------|------------|------------|---------|
+
 | <img width="375" height="812" alt="Home Screen" src="https://github.com/user-attachments/assets/f5b69d38-e0f5-4a41-a1a2-33c6db1c8ce1" /> | <img width="375" height="1413" alt="Focus Mood" src="https://github.com/user-attachments/assets/c04a5220-ca73-4e4b-ab64-6689cac57fc2" /> | <img width="375" height="812" alt="Task Description" src="https://github.com/user-attachments/assets/e9ddd88a-ab78-48a0-82ee-8523466e4244" />
  | <img width="375" height="1096" alt="Profile" src="https://github.com/user-attachments/assets/8ccd1d8e-424b-49f8-865e-f2dd15afe27c" /> 
  |
