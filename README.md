@@ -33,7 +33,6 @@ The app helps users organize their daily tasks, stay focused, and track producti
 
 - **Frontend**: Flutter (Dart)
 - **Backend**: Supabase (Authentication, Database, API)
-- **State Management**: Flutter built-in tools / (e.g., Provider, Riverpod, or Bloc depending on your implementation)
 - **UI**: Custom widgets with a dark theme
 
 ---
