@@ -1,16 +1,53 @@
-# hoctapflutter
+# 📅 Planify-App
 
-A new Flutter project.
+Planify-App is a **task management and productivity app** built with **Flutter** and **Dart**, using **Supabase** as the backend service.  
+The app helps users organize their daily tasks, stay focused, and track productivity with ease.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+- ✅ **Task Management**
+  - Add, edit, and delete tasks
+  - Categorize tasks by type (Work, Study, Health, etc.)
+  - Mark tasks as completed
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 🎯 **Focus Mode**
+  - Start focus sessions with a countdown timer
+  - Block notifications while focusing
+  - Track productivity time across the week
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- 📊 **Statistics & Insights**
+  - Weekly overview of focus time
+  - Track time spent on applications
+  - Visual charts for better insights
+
+- 👤 **User Profile**
+  - View personal progress (tasks left / tasks completed)
+  - Change account information (name, password, image)
+  - App settings and support options
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Flutter (Dart)
+- **Backend**: Supabase (Authentication, Database, API)
+- **State Management**: Flutter built-in tools / (e.g., Provider, Riverpod, or Bloc depending on your implementation)
+- **UI**: Custom widgets with a dark theme
+
+---
+
+## 📱 Screenshots
+
+| Home Screen | Focus Mode | Task Index | Profile |
+|-------------|------------|------------|---------|
+| ![Home](./assets/screenshots/Home%20Screen.png) | ![Focus](./assets/screenshots/Focus%20Mood.png) | ![Index](./assets/screenshots/Choose%20category.png) | ![Profile](./assets/screenshots/Profile.png) |
+
+---
+
+## ⚙️ Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/Planify-App.git
