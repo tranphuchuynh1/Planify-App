@@ -6,11 +6,17 @@ import 'package:hoctapflutter/ui/onboarding/onboarding_page_view.dart';
 import 'package:hoctapflutter/ui/splash/splash.dart';
 import 'package:hoctapflutter/ui/welcome/welcome_page.dart';
 
+import 'core/authentications/authentication_gate.dart';
+import 'core/services/supabase_service.dart';
+
 void main() async {
 
   WidgetsFlutterBinding.ensureInitialized();
-  
+
+
   await EasyLocalization.ensureInitialized();
+  // Khởi tạo Supabase
+  await SupabaseService.initialize();
 
   runApp(EasyLocalization(
       supportedLocales: const [
@@ -36,7 +42,7 @@ class MyApp extends StatelessWidget {
       localizationsDelegates: context.localizationDelegates,
       locale: context.locale,
       supportedLocales: context.supportedLocales,
-      home: const MainPage(),
+      home: const AuthenticationGate(),
       debugShowCheckedModeBanner: false,
     );
   }

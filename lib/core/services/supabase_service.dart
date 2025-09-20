@@ -1,21 +1,20 @@
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class SupabaseService {
-  static const String supabaseUrl = 'YOUR_SUPABASE_URL_HERE';
-  static const String supabaseAnonKey = 'YOUR_SUPABASE_ANON_KEY_HERE';
+  static const String supabaseUrl = 'https://jmapbgzdrnnbsleyzcto.supabase.co';
+  static const String supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImptYXBiZ3pkcm5uYnNsZXl6Y3RvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc4NDc0MTgsImV4cCI6MjA3MzQyMzQxOH0.A4Bw7Bl1X2SDvlwI0AvDRHxtE-GqoMfHoWasENZeZ3c';
 
   static late Supabase _instance;
   static SupabaseClient get client => _instance.client;
 
-  static Future<void> initialize() async {
+  static Future initialize() async {
     _instance = await Supabase.initialize(
       url: supabaseUrl,
       anonKey: supabaseAnonKey,
     );
   }
 
-  // Authentication methods
-  static Future<AuthResponse> signUp({
+  static Future signUp({
     required String email,
     required String password,
     Map<String, dynamic>? data,
@@ -32,7 +31,7 @@ class SupabaseService {
     }
   }
 
-  static Future<AuthResponse> signIn({
+  static Future signIn({
     required String email,
     required String password,
   }) async {
@@ -47,7 +46,28 @@ class SupabaseService {
     }
   }
 
-  static Future<void> signOut() async {
+
+// code service signInWithGoogle for supabase
+  static Future signInWithGoogle({
+    required String accessToken,
+    required String idToken,
+  }) async {
+    try {
+      final response = await client.auth.signInWithIdToken(
+        provider: OAuthProvider.google,
+        idToken: idToken,
+        accessToken: accessToken,
+      );
+
+      if (response.user == null) {
+        throw Exception('Failed to sign in with Google');
+      }
+    } catch (e) {
+      throw Exception('Google sign in failed: $e');
+    }
+  }
+
+  static Future signOut() async {
     try {
       await client.auth.signOut();
     } catch (e) {
@@ -56,24 +76,19 @@ class SupabaseService {
   }
 
   static User? get currentUser => client.auth.currentUser;
-
   static bool get isLoggedIn => currentUser != null;
-
   static String? get userEmail => currentUser?.email;
 
   static String? get userName {
     final user = currentUser;
     if (user != null) {
-      // Ưu tiên lấy tên từ user metadata
       if (user.userMetadata?['full_name'] != null) {
         return user.userMetadata!['full_name'];
       }
-      // Nếu không có, lấy từ email (phần trước @)
       return user.email?.split('@')[0];
     }
     return null;
   }
 
-  // Listen to auth state changes
   static Stream<AuthState> get authStateChanges => client.auth.onAuthStateChange;
 }
