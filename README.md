@@ -14,7 +14,7 @@ The app helps users organize their daily tasks, stay focused, and track producti
 ✨ **Live Demo**: 👉 [Try Planify-App Here](https://appetize.io/app/b_vberolqp63f52h2da5hsklrqi4)
 
 **Test Account** :  
-Email: demo@planify.com
+Email: demo@planify.com  
 Password: demo123456
 
 ---
