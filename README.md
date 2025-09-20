@@ -1,16 +1,57 @@
-# hoctapflutter
+# 📅 Planify-App
 
-A new Flutter project.
+Planify-App is a **task management and productivity app** built with **Flutter** and **Dart**, using **Supabase** as the backend service.  
+The app helps users organize their daily tasks, stay focused, and track productivity with ease.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+- ✅ **Task Management**
+  - Add, edit, and delete tasks
+  - Categorize tasks by type (Work, Study, Health, etc.)
+  - Mark tasks as completed
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 🎯 **Focus Mode**
+  - Start focus sessions with a countdown timer
+  - Block notifications while focusing
+  - Track productivity time across the week
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- 📊 **Statistics & Insights**
+  - Weekly overview of focus time
+  - Track time spent on applications
+  - Visual charts for better insights
+
+- 👤 **User Profile**
+  - View personal progress (tasks left / tasks completed)
+  - Change account information (name, password, image)
+  - App settings and support options
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Flutter (Dart)
+- **Backend**: Supabase (Authentication, Database, API)
+- **UI**: Custom widgets with a dark theme
+
+---
+
+## 📱 Screenshots
+
+| Home Screen | Focus Mode | 
+| Task Index | Profile |
+
+|<img width="375" height="812" alt="Home Screen" src="https://github.com/user-attachments/assets/f5b69d38-e0f5-4a41-a1a2-33c6db1c8ce1" /> | <img width="375" height="1413" alt="Focus Mood" src="https://github.com/user-attachments/assets/c04a5220-ca73-4e4b-ab64-6689cac57fc2" /> | <img width="375" height="812" alt="Task Description" src="https://github.com/user-attachments/assets/e9ddd88a-ab78-48a0-82ee-8523466e4244" />
+ | <img width="375" height="1096" alt="Profile" src="https://github.com/user-attachments/assets/8ccd1d8e-424b-49f8-865e-f2dd15afe27c" /> 
+ |
+
+---
+
+
+
+## ⚙️ Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/Planify-App.git
