@@ -5,6 +5,20 @@ The app helps users organize their daily tasks, stay focused, and track producti
 
 ---
 
+## 🖼️ Demo  
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ac62c254-95fd-4aff-8473-a23c0493d7f9" alt="Planify Logo" width="240" />
+</p>
+
+✨ **Live Demo**: 👉 [Try Planify-App Here](https://appetize.io/app/b_vberolqp63f52h2da5hsklrqi4)
+
+**Test Account** :  
+Email: demo@planify.com
+Password: demo123456
+
+---
+
 ## 🚀 Features
 
 - ✅ **Task Management**
