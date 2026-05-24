@@ -12,7 +12,7 @@ The app helps users organize their daily tasks, stay focused, and track producti
 </p>
 
 ✨ **Live Demo**: 👉 [Try Planify-App Here](https://appetize.io/app/b_wlc4lrwsppoog5tymxozomtasq)  
-✨ **Youtube Demo**: 👉 [Youtube](https://www.youtube.com/watch?v=F2whcyc73FU&t=337s)  
+✨ **Youtube Demo**: 👉 [Youtube](https://www.youtube.com/watch?v=rgzuO0PRKS4&t=1s)  
 
 
 **Test Account** :  
